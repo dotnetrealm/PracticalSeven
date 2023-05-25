@@ -1,0 +1,2 @@
+# PracticalSeven
+SOLID principle
