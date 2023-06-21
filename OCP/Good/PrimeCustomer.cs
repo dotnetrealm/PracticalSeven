@@ -1,8 +1,9 @@
 ﻿namespace OCP.Good
 {
-    public class PrimeCustomer : Discount
+    public class PrimeCustomer : Customer
     {
-        public override decimal GetDiscount(decimal amount)
+        public PrimeCustomer(string name, string address) : base(name, address) { }
+        public override decimal CalculateDiscount(decimal amount)
         {
             return amount * 0.15M;
         }
