@@ -1,8 +1,8 @@
 ﻿namespace DIP.Bad
 {
-    internal class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Notification notification = new();
             notification.GmailNotify();

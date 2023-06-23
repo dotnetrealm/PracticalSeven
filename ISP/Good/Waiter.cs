@@ -1,6 +1,8 @@
-﻿namespace ISP.Good
+﻿using ISP.Good.Interfaces;
+
+namespace ISP.Good
 {
-    internal class Waiter : IWaiter
+    public class Waiter : IWaiter
     {
         public void ServeCustomer()
         {

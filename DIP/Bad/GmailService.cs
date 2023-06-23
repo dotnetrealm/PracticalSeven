@@ -1,6 +1,6 @@
 ﻿namespace DIP.Bad
 {
-    internal class GmailService
+    public class GmailService
     {
         public bool Send()
         {

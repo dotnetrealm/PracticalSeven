@@ -1,6 +1,6 @@
 ﻿namespace DIP.Bad
 {
-    internal class HotMailService
+    public class HotMailService
     {
         public bool Send()
         {

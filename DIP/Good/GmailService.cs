@@ -1,6 +1,6 @@
 ﻿namespace DIP.Good
 {
-    internal class GmailService : IMailService
+    public class GmailService : IMailService
     {
         public bool Send()
         {

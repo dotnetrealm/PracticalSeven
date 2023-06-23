@@ -1,8 +1,8 @@
 ﻿namespace DIP.Good
 {
-    internal class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Notification notification = new(new GmailService());
             notification.SendMail();

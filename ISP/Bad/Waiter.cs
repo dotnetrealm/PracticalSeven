@@ -1,6 +1,6 @@
 ﻿namespace ISP.Bad
 {
-    internal class Waiter : IRestaurantEmployee
+    public class Waiter : IRestaurantEmployee
     {
         public void CookFood()
         {

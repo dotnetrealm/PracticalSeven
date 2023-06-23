@@ -11,7 +11,6 @@
         public string Name { get; set; } = null!;
         public string Address { get; set; } = null!;
         public CustomerType Type { get; set; }
-        public Customer() { }
         public Customer(string name, string address, CustomerType customerType)
         {
             this.Name = name;
@@ -21,6 +20,11 @@
 
         // Here each time we updating this method if any new customertype is added,
         // so it's break the rule of OCP principle
+        /// <summary>
+        /// Calculate discount on final amount base on customer subscription
+        /// </summary>
+        /// <param name="amount">invoice amount</param>
+        /// <returns>discount on given amount</returns>
         public decimal CalculateDiscount(decimal amount)
         {
             if (this.Type == CustomerType.Royal) {

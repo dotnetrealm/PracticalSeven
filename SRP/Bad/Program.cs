@@ -2,7 +2,7 @@
 {
     public class SRPBad
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             UserService userService = new UserService();
             userService.RegisterUser("Bhavin", "bhavin.kareliya2017@gmail.com");

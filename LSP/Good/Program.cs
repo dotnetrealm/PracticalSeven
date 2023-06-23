@@ -1,23 +1,20 @@
-﻿namespace LSP.Good
+﻿using LSP.Good.Interfaces;
+
+namespace LSP.Good
 {
-    public class Program
+    internal class LSPGood
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
+            CustomerBase royalcustomer = new RoyalCustomer("Bhavin", "Rajkot");
+            CustomerBase primeCustomer = new PrimeCustomer("Vipul", "Ahmedabad");
+            ICustomer regularCustomer = new RegularCustomer("Jil", "Anand");
 
-            CalculateGST calculateGST = new CalculateGST();
-            calculateGST.Calculate(2000);
-            Console.WriteLine("You have to pay " + calculateGST.Calculate(2000) + " on order of 2000");
+            Console.WriteLine("Discount available for Royal customer is " + royalcustomer.CalculateDiscount(10000));
+            Console.WriteLine("Discount available for Prime customer is " + primeCustomer.CalculateDiscount(10000));
+            Console.WriteLine("Point available for Regular customer is " + regularCustomer.CalculatePoints(10000));
 
-            calculateGST = new FoodProductGST();
-            calculateGST.Calculate(10000);
-            Console.WriteLine("You have to pay " + calculateGST.Calculate(10000) + " on Food order of 10000");
-
-            calculateGST = new FootwareGST();
-            Console.WriteLine("You have to pay " + calculateGST.Calculate(25000) + " on Footware order of 25000");
-
-            Console.ReadLine();
-
+            Console.ReadKey();
         }
     }
 }

@@ -1,6 +1,6 @@
-﻿namespace ISP.Good
+﻿namespace ISP.Good.Interfaces
 {
-    internal interface ICheaf
+    public interface ICheaf
     {
         void CookFood();
         void CutVeggies();

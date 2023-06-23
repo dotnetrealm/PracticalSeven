@@ -1,6 +1,6 @@
 ﻿namespace DIP.Bad
 {
-    internal class Notification
+    public class Notification
     {
         public bool GmailNotify()
         {

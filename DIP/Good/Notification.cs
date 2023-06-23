@@ -1,16 +1,16 @@
 ﻿namespace DIP.Good
 {
-    internal class Notification
+    public class Notification
     {
-        readonly IMailService mailService;
+        readonly IMailService _mailService;
         public Notification(IMailService mailService)
         {
-            this.mailService = mailService;
+            this._mailService = mailService;
         }
 
         public bool SendMail()
         {
-            return mailService.Send();
+            return _mailService.Send();
         }
     }
 }

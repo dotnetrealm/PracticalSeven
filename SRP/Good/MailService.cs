@@ -2,7 +2,7 @@
 
 namespace SRP.Good
 {
-    internal class MailService
+    public class MailService
     {
         public void SendMail(MailMessage message)
         {

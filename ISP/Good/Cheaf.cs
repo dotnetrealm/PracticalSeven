@@ -1,6 +1,8 @@
-﻿namespace ISP.Good
+﻿using ISP.Good.Interfaces;
+
+namespace ISP.Good
 {
-    internal class Cheaf : ICheaf
+    public class Cheaf : ICheaf
     {
         public void CookFood()
         {
@@ -11,7 +13,7 @@
             Console.WriteLine("Food is ready!!");
         }
 
-        void ICheaf.CutVeggies()
+        public void CutVeggies()
         {
             Console.WriteLine("Cutting Veggies");
             Thread.Sleep(2000);

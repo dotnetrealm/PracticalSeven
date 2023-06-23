@@ -1,6 +1,6 @@
 ﻿namespace DIP.Good
 {
-    internal class HotMailService : IMailService
+    public class HotMailService : IMailService
     {
         public bool Send()
         {
